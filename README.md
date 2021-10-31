@@ -1,0 +1,14 @@
+## Inspiration
+As college students, we were inspired to pursue this project because we felt that there was a lack of help services for students who felt unsafe while they are traversing downtown or the campus. Universe aims to be an SMS text message-based system of reporting and preventing incidents of harassment, assault, etc. so that student feel safe going to and from class. 
+## What it does
+This SMS-application will work alongside universities and colleges to have students sign up and input personal information as well as their emergency contacts information. Once that is done then students will be able to text this number certain short keywords if they are in an emergency, feel unsafe, or would like their walk to be protected and monitored. If they text the keyword for emergency then application will contact authorities as well as their emergency contact. If a user texts the keyword for feeling unsafe then their emergency contact will be alerted and their location will be shared. If the user texts the keyword for protecting their walk, then they will have their location tracked until they reach their destination and if they do not reach their destination in time then emergency contacts will be contacted and then emergency authorities. 
+## How we built it
+We built this application using the Tulio SMS API as well as flask running using HTML. For the location feature we attempted to use the google location sharing feature which sends a link with the user’s information. We then scraped the URL to find the user’s location.
+## Challenges we ran into
+A big challenge that we ran into was being able to find a way to track the user’s location through sms without developing an app. We tried using Google’s geolocation API, however, that would only give us the location of the user once. We wanted the user’s location to be streamed to us and continuously change if they moved. In order to combat this challenge, we ended up utilizing a feature of google called location sharing which sends a link with the user’s coordinates. 
+## Accomplishments that we're proud of
+An accomplishment we are proud of is being able to successfully integrate the Tulio text sms API into the application. 
+## What we learned
+What we learned is how to find alternatives for certain API’s and how to set up a Tulio sms text API to send messages to users. 
+## What's next for UniverSafe
+Next for UniverSafe we are planning to integrate an ios and android app which allows users who opt in to share their location. This will then be utilized so that if someone reports an incident of feeling unsafe or harassment then that incident will be reported to everyone in a .5-mile radius. We can then increase the number of bystanders and help some people avoid that specific area if they are feeling unsafe as well. This will then be taken even further to give law enforcement data on hotspots of these incidents so that they increase security in those areas.
