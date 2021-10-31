@@ -4,9 +4,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Universafe Reporting</title>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script>
-            
+            const successCallback = (position) => {
+                console.log("logged succesful");
+                console.log(position);
+                var pos = position;
+            }
+
+            const errorCallback = (error) => {
+                console.log("logged error");
+                console.log(error);
+            }
+
+            navigator.geolocation.getCurrentPosition(succcessCallback, errorCallback)
         </script>
     </head>
     <body>
