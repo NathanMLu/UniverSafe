@@ -85,9 +85,8 @@ def sms_reply():
         elif request.form['Body'].lower() in sos:
             msg = "Contacting Emergency Personnel, notifying close ones, messaging people in your area!"
         elif request.form['Body'].lower() in unsafe:
-            msg = "Notifying close ones. "
+            msg = "Notifying close ones."
         else:
-            #msg = witty[randint(0, len(witty))]
             msg = "Are you signed up already? Please visit our website: https://universafe.herokuapp.com/"
 
         # Figure out individual users
