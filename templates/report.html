@@ -1,26 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Universafe Reporting</title>
-        <script>
-            const successCallback = (position) => {
-                console.log("logged succesful");
-                console.log(position);
-                var pos = position;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universafe Reporting</title>
+    <script>
+        const successCallback = (position) => {
+            console.log("logged succesful");
+            console.log(position);
+        }
 
-            const errorCallback = (error) => {
-                console.log("logged error");
-                console.log(error);
-            }
+        const errorCallback = (error) => {
+            console.log("logged error");
+            console.log(error);
+        }
 
-            navigator.geolocation.getCurrentPosition(succcessCallback, errorCallback)
-        </script>
-    </head>
-    <body>
-        <button type="button">Get Location</button>
-        <h1> Your position has been logged </h1>
-    </body>
+        navigator.geolocation.getCurrentPosition(succcessCallback, errorCallback)
+    </script>
+</head>
+<body>
+    <h1> Your position has been logged </h1>
+</body>
 </html>

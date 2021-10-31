@@ -55,9 +55,9 @@ def index():
     return render_template("index.html")
 
 # Report and get location
-@app.route("/report")
+@app.route("/report", methods=['GET'])
 def report():
-    sendMessage("Position notified")
+    sendMessage("Position notified", '+15622794424')
     return render_template("report.html")
 
 # For new user setup on website (include Auth0)
